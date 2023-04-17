@@ -1,0 +1,43 @@
+body {
+    display:  flex;
+    height: 650px;
+    width: 1500px;
+    justify-content: center;
+    align-items: center;
+    border: solid violet 2px;
+}
+h1{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    10% { color: blue; }
+    20% { color: gold; }
+    30% { color: paleturquoise; }
+    40% { color: red; }
+    50% { color: salmon }
+    60% { color: green; }
+    70% { color: burlywood; }
+    80% { color: mediumslateblue; }
+    90% { color:aquamarine; }
+  }
+.play_window{
+    display:grid;
+    height: 500px;
+    width: 480px;
+    background-color: black;
+    grid-template-columns:repeat(30,16px) ;
+    grid-template-rows:repeat(30,16px);
+    border-radius: 10px;
+}
+.snake{       
+    background-color: blueviolet;
+    border-radius: 22px;
+}
+.food{
+    background-color:green;
+    border-radius: 4px;
+}
